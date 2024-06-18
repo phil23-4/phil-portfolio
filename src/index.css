@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: Amsterdam Four;
+  src: url("/fonts/Amsterdam\ Four_ttf\ 400.ttf");
+}

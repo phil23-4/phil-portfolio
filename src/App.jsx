@@ -1,18 +1,19 @@
 import './App.css'
-import Hero from './components/home'
-// import Hero from './components/home'
-// import Footer from './components/nav/footer'
-
 import Header from './components/nav/header'
+import Hero from './components/hero'
+import About from './components/about'
+import Services from './components/services'
+import Footer from './components/nav/footer'
 
 function App() {
 
   return (
     <>
     <Header />
-    <Hero />
-    {/* <Hero /> */}
-    {/* <Footer /> */}
+    <Hero />  
+    <About />
+    <Services />
+    <Footer />
     </>
   )
 }

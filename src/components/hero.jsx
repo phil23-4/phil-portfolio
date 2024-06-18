@@ -1,109 +1,261 @@
+import {
+  InformationCircleIcon,
+  AtSymbolIcon,
+  BriefcaseIcon,
+} from "@heroicons/react/24/outline";
+import {
+  CodeBracketIcon,
+  Square3Stack3DIcon,
+  TableCellsIcon
+} from '@heroicons/react/20/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faJava, faNodeJs, faPython } from "@fortawesome/free-brands-svg-icons";
+
+const techStack = [
+  {
+    name: "Java",
+    icon: faJava,
+  },
+  {
+    name: "Node.js",
+    icon: faNodeJs,
+  },
+  {
+    name: "Python",
+    icon: faPython,
+  }
+]
+
+const homeData = [
+  {
+    title: " About Me",
+    description:
+      "My journey started with a Bachelor's degree in Computer Science, and I've since branched into the world of data analytics with a Master's degree in Applied Statistics.",
+    more: "Learn more",
+    icon: InformationCircleIcon,
+  },
+  {
+    title: " My Work",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    more: "Browse Portfolio",
+    icon: BriefcaseIcon,
+  },
+];
+
 export default function Hero() {
   return (
-    <div className="bg-white">
-    <div className="relative isolate px-6 pt-14 lg:px-8">
-      <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
-      <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
-        <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-          <div className="sm:max-w-lg">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Summer styles are finally here
-            </h1>
-            <p className="mt-4 text-xl text-gray-500">
-              This year, our new summer collection will shelter you from the harsh elements of a world that doesn&apos;t care
-              if you live or die.
-            </p>
-          </div>
-          <div>
-            <div className="mt-10">
-              {/* Decorative image grid */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
-              >
-                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                  <div className="flex items-center space-x-6 lg:space-x-8">
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
+    <>
+      <div className="overflow-hidden bg-stone-50 py-24 lg:py-28 sm:py-12 bg-hero-bg bg-no-repeat bg-center">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 ">
+          <div className="mx-auto grid  grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-full lg:grid-cols-2">
+
+            <div className="relative z-20 mx-auto max-w-[40rem] pb-16 pt-16 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:pt-20">
+
+              <p className="mt-4 text-5xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
+                Phillip F. Chapita
+              </p>
+              <p className="mt-4 lg:text-lg font-bold tracking-[-0.04em] text-gray-800 sm:text-xl sm:leading-[3.5rem]"> Software Developer | Data Scientist</p>
+              <div className="flex flex-wrap gap-6 mt-4">
+                {techStack.map((item) => (
+                  <div key={item.name} className="flex items-center text-sm font-medium text-slate-700">
+                    <FontAwesomeIcon icon={item.icon} className="h-8 w-8 flex-none stroke-current text-slate-600"
+                      fill="none" />
+                    <span className="ml-2.5">{item.name}</span>
+                  </div>
+                ))}
+
+              </div>
+              <p className="mt-6 text-base text-balance leading-7 text-slate-600">
+                {/* Junior software developer with a focus on building engaging & accessible digital experiences */}
+                I specialize in creating dynamic websites and analyzing complex data sets, bringing over 3 years of expertise to every project.
+              </p>
+              <div className="mt-8 flex gap-4">
+                <a
+                  className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
+                  href="/preview"
+                >
+                  <span>
+                    Hire Me{" "}
+                    <span
+                      aria-hidden="true"
+                      className="text-slate-400 sm:inline"
+                    >
+                      →
+                    </span>
+                  </span>
+                </a>
+                <a
+                  className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 "
+                  href="/documentation"
+                >
+                  <span>
+                    Download CV{" "}
+                    <span
+                      aria-hidden="true"
+                      className="text-black/25 sm:inline"
+                    >
+                      →
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+
+            {/* <!-- Icon Blocks --> */}
+            <div className="mx-auto items-end">
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-1 items-center gap-6">
+                {/* <!-- Card --> */}
+                {homeData.map((item) => (
+                  <a
+                    key={item.name}
+                    className="group flex  lg:py-2 gap-y-6 size-full lg:max-w-sm p-2"
+                    href="#"
+                  >
+                    <div className="flex-shrink-0 size-8 text-gray-800 mt-0.5 me-6">
+                      <item.icon
+                        className="h-8 w-8 text-gray-600 group-hover:text-gray-800"
+                        aria-hidden="true"
+                      />
                     </div>
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
+
+                    <div className="lg:border-b lg:border-slate-900/15 lg:pb-8">
+                      <div>
+                        <h3 className="block font-bold tracking-wider text-gray-800">
+                          {item.title}
+                        </h3>
+                        <p className="text-gray-600 pt-4 text-pretty">
+                          {item.description}
+                        </p>
                       </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
+
+                      <p className="mt-8 inline-flex items-center tracking-wider gap-x-1 text-sm font-semibold text-gray-800">
+                        {item.more}
+                        <svg
+                          className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="m9 18 6-6-6-6" />
+                        </svg>
+                      </p>
                     </div>
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
+                  </a>
+                ))}
+
+                {/* <!-- End Card --> */}
+
+                {/* Social Media Handles */}
+                <div className="flex  size-full p-5  ">
+                  <div className="flex-shrink-0 size-8 text-gray-800 mt-0.5 me-6">
+                    <AtSymbolIcon
+                      className="h-8 w-8 text-gray-600 group-hover:text-gray-800"
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  <div>
+                    <div>
+                      <h3 className="block font-bold tracking-wider text-gray-800 ">
+                        Follow Me
+                      </h3>
+                    </div>
+
+                    <div className="mt-8">
+                      <div className="lg:ms-1 inline-flex items-center gap-x-6">
+                        <a
+                          className="inline-flex flex-shrink-0 justify-center items-center size-9 font-medium  text-gray-800 hover:scale-125"
+                          href="https://www.figma.com/community/file/1179068859697769656"
+                          target="_blank"
+                        >
+                          <svg
+                            className="flex-shrink-0 size-8"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6.875 18C8.531 18 9.875 16.656 9.875 15V12H6.875C5.219 12 3.875 13.344 3.875 15C3.875 16.656 5.219 18 6.875 18Z"
+                              fill="#0ACF83"
+                            ></path>
+                            <path
+                              d="M3.875 9C3.875 7.344 5.219 6 6.875 6H9.875V12H6.875C5.219 12 3.875 10.656 3.875 9Z"
+                              fill="#A259FF"
+                            ></path>
+                            <path
+                              d="M3.875 3C3.875 1.344 5.219 0 6.875 0H9.875V6H6.875C5.219 6 3.875 4.656 3.875 3Z"
+                              fill="#F24E1E"
+                            ></path>
+                            <path
+                              d="M9.87501 0H12.875C14.531 0 15.875 1.344 15.875 3C15.875 4.656 14.531 6 12.875 6H9.87501V0Z"
+                              fill="#FF7262"
+                            ></path>
+                            <path
+                              d="M15.875 9C15.875 10.656 14.531 12 12.875 12C11.219 12 9.87501 10.656 9.87501 9C9.87501 7.344 11.219 6 12.875 6C14.531 6 15.875 7.344 15.875 9Z"
+                              fill="#1ABCFE"
+                            ></path>
+                          </svg>
+                        </a>
+                        <a
+                          className="inline-flex flex-shrink-0 justify-center items-center size-9 font-medium  text-gray-800 hover:scale-125"
+                          href="https://github.com/htmlstreamofficial/preline"
+                          target="_blank"
+                        >
+                          <svg
+                            className="flex-shrink-0 size-8"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                          </svg>
+                        </a>
+                        <a
+                          className="inline-flex flex-shrink-0 justify-center items-center size-8 font-medium  text-gray-800 hover:scale-125"
+                          href="https://twitter.com/prelineUI"
+                          target="_blank"
+                        >
+                          <svg
+                            className="flex-shrink-0 size-6 pb-1"
+                            width="50"
+                            height="52"
+                            viewBox="0 0 50 52"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M28.5665 20.7714L46.4356 0H42.2012L26.6855 18.0355L14.2931 0H0L18.7397 27.2728L0 49.0548H4.23464L20.6196 30.0087L33.7069 49.0548H48L28.5655 20.7714H28.5665ZM22.7666 27.5131L5.76044 3.18778H12.2646L42.2032 46.012H35.699L22.7666 27.5142V27.5131Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <a
-                href="#"
-                className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
-              >
-                Shop Collection
-              </a>
             </div>
+            {/* <!-- End Icon Blocks --> */}
+
           </div>
+
+          {/* About Section */}
         </div>
       </div>
-    </div>
-    </div>
-  )
+     
+    </>
+  );
 }
