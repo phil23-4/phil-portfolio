@@ -3,7 +3,7 @@ import {
   AtSymbolIcon,
   BriefcaseIcon,
 } from "@heroicons/react/24/outline";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJava, faNodeJs, faPython } from "@fortawesome/free-brands-svg-icons";
 
 const techStack = [
@@ -21,8 +21,8 @@ const techStack = [
     id: 3,
     name: "Python",
     icon: faPython,
-  }
-]
+  },
+];
 
 const homeData = [
   {
@@ -51,26 +51,33 @@ export default function Hero() {
       <div className="overflow-hidden bg-stone-50 py-24 lg:py-28 sm:py-12 md:bg-hero-bg bg-no-repeat bg-center">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 ">
           <div className="mx-auto grid  grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-full lg:grid-cols-2">
-
             <div className="relative z-20 mx-auto max-w-[40rem] pb-16 pt-16 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:pt-20">
-
               <p className="mt-4 text-5xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
                 Phillip F. Chapita
               </p>
-              <p className="mt-4 lg:text-lg font-bold tracking-[-0.04em] text-gray-800 sm:text-xl sm:leading-[3.5rem]"> Software Developer | Data Scientist</p>
+              <p className="mt-4 lg:text-lg font-bold tracking-[-0.04em] text-gray-800 sm:text-xl sm:leading-[3.5rem]">
+                {" "}
+                Software Developer | Data Scientist
+              </p>
               <div className="flex flex-wrap gap-6 mt-4">
                 {techStack.map((item) => (
-                  <div key={item.id} className="flex items-center text-sm font-medium text-slate-700">
-                    <FontAwesomeIcon icon={item.icon} className="h-8 w-8 flex-none stroke-current text-slate-600"
-                      fill="none" />
+                  <div
+                    key={item.id}
+                    className="flex items-center text-sm font-medium text-slate-700"
+                  >
+                    <FontAwesomeIcon
+                      icon={item.icon}
+                      className="h-8 w-8 flex-none stroke-current text-slate-600"
+                      fill="none"
+                    />
                     <span className="ml-2.5">{item.name}</span>
                   </div>
                 ))}
-
               </div>
               <p className="mt-6 text-base text-balance leading-7 text-slate-600">
                 {/* Junior software developer with a focus on building engaging & accessible digital experiences */}
-                I specialize in creating dynamic websites and analyzing complex data sets, bringing over 3 years of expertise to every project.
+                I specialize in creating dynamic websites and analyzing complex
+                data sets, bringing over 3 years of expertise to every project.
               </p>
               <div className="mt-8 flex gap-4">
                 <a
@@ -104,10 +111,8 @@ export default function Hero() {
               </div>
             </div>
 
-
             {/* <!-- Icon Blocks --> */}
             <div className="mx-auto items-end">
-
               <div className="grid sm:grid-cols-2 lg:grid-cols-1 items-center gap-6">
                 {/* <!-- Card --> */}
                 {homeData.map((item) => (
@@ -152,8 +157,6 @@ export default function Hero() {
                           </svg>
                         </p>
                       </a>
-
-
                     </div>
                   </div>
                 ))}
@@ -180,7 +183,7 @@ export default function Hero() {
                       <div className="lg:ms-1 inline-flex items-center gap-x-6">
                         <a
                           className="inline-flex flex-shrink-0 justify-center items-center size-9 font-medium  text-gray-800 hover:scale-125"
-                          href="https://www.figma.com/community/file/1179068859697769656"
+                          href="https://www.figma.com/@phillipchapita"
                           target="_blank"
                         >
                           <svg
@@ -215,7 +218,7 @@ export default function Hero() {
                         </a>
                         <a
                           className="inline-flex flex-shrink-0 justify-center items-center size-9 font-medium  text-gray-800 hover:scale-125"
-                          href="https://github.com/htmlstreamofficial/preline"
+                          href="https://github.com/phil23-4"
                           target="_blank"
                         >
                           <svg
@@ -231,7 +234,7 @@ export default function Hero() {
                         </a>
                         <a
                           className="inline-flex flex-shrink-0 justify-center items-center size-8 font-medium  text-gray-800 hover:scale-125"
-                          href="https://twitter.com/prelineUI"
+                          href="https://www.upwork.com/freelancers/~019a6fc81ef4592218?mp_source=share"
                           target="_blank"
                         >
                           <svg
@@ -240,10 +243,10 @@ export default function Hero() {
                             height="24"
                             fill="#6FDA44"
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 641 512">
+                            viewBox="0 0 641 512"
+                          >
                             <path d="M494.7 295.6c-50.3 0-83.5-38.9-92.8-53.9c11.9-95.3 46.8-125.4 92.8-125.4c45.5 0 80.9 36.4 80.9 89.7s-35.4 89.7-80.9 89.7zm0-237.8c-81.9 0-127.8 53.4-141 108.4c-14.9-28-25.9-65.5-34.5-100.3H206v141c0 51.1-23.3 89-68.8 89s-71.6-37.8-71.6-89l.5-141H.8v141c0 41.1 13.3 78.4 37.6 105.1c25 27.5 59.2 41.8 98.8 41.8c78.8 0 133.8-60.4 133.8-146.9V112.1c8.2 31.2 27.8 91.1 65.3 143.6l-35 199.4h66.4l23.1-141.3c7.6 6.3 15.7 12 24.2 17c22.2 14 47.7 21.9 73.9 22.8c0 0 4 .2 6.1 .2c81.2 0 145.9-62.9 145.9-147.8s-64.8-148.1-146-148.1z" />
                           </svg>
-
                         </a>
                       </div>
                     </div>
@@ -252,13 +255,11 @@ export default function Hero() {
               </div>
             </div>
             {/* <!-- End Icon Blocks --> */}
-
           </div>
 
           {/* About Section */}
         </div>
       </div>
-
     </>
   );
 }
