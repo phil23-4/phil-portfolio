@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
+// import daisyui from "daisyui"
 export default {
   content: ["./node_modules/preline/preline.js","./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
@@ -10,8 +10,14 @@ export default {
       }, fontFamily: {
         amsterdam : ["Amsterdam Four", "serif"]
       },
+      colors: {
+        accent: '#A8E5BA',
+        bluey: '#393F82',
+      },
     },
   },
-  plugins: [ import("preline/plugin")],
+  plugins: [ import("preline/plugin"),
+    
+  ],
 }
 

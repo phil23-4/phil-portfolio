@@ -3,24 +3,22 @@ import {
   AtSymbolIcon,
   BriefcaseIcon,
 } from "@heroicons/react/24/outline";
-import {
-  CodeBracketIcon,
-  Square3Stack3DIcon,
-  TableCellsIcon
-} from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJava, faNodeJs, faPython } from "@fortawesome/free-brands-svg-icons";
 
 const techStack = [
   {
+    id: 1,
     name: "Java",
     icon: faJava,
   },
   {
+    id: 2,
     name: "Node.js",
     icon: faNodeJs,
   },
   {
+    id: 3,
     name: "Python",
     icon: faPython,
   }
@@ -28,17 +26,21 @@ const techStack = [
 
 const homeData = [
   {
+    id: 1,
     title: " About Me",
     description:
       "My journey started with a Bachelor's degree in Computer Science, and I've since branched into the world of data analytics with a Master's degree in Applied Statistics.",
     more: "Learn more",
+    href: "#about",
     icon: InformationCircleIcon,
   },
   {
+    id: 2,
     title: " My Work",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
     more: "Browse Portfolio",
+    href: "#projects",
     icon: BriefcaseIcon,
   },
 ];
@@ -46,7 +48,7 @@ const homeData = [
 export default function Hero() {
   return (
     <>
-      <div className="overflow-hidden bg-stone-50 py-24 lg:py-28 sm:py-12 bg-hero-bg bg-no-repeat bg-center">
+      <div className="overflow-hidden bg-stone-50 py-24 lg:py-28 sm:py-12 md:bg-hero-bg bg-no-repeat bg-center">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 ">
           <div className="mx-auto grid  grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-full lg:grid-cols-2">
 
@@ -58,7 +60,7 @@ export default function Hero() {
               <p className="mt-4 lg:text-lg font-bold tracking-[-0.04em] text-gray-800 sm:text-xl sm:leading-[3.5rem]"> Software Developer | Data Scientist</p>
               <div className="flex flex-wrap gap-6 mt-4">
                 {techStack.map((item) => (
-                  <div key={item.name} className="flex items-center text-sm font-medium text-slate-700">
+                  <div key={item.id} className="flex items-center text-sm font-medium text-slate-700">
                     <FontAwesomeIcon icon={item.icon} className="h-8 w-8 flex-none stroke-current text-slate-600"
                       fill="none" />
                     <span className="ml-2.5">{item.name}</span>
@@ -109,10 +111,10 @@ export default function Hero() {
               <div className="grid sm:grid-cols-2 lg:grid-cols-1 items-center gap-6">
                 {/* <!-- Card --> */}
                 {homeData.map((item) => (
-                  <a
-                    key={item.name}
+                  <div
+                    key={item.id}
                     className="group flex  lg:py-2 gap-y-6 size-full lg:max-w-sm p-2"
-                    href="#"
+                    href={item.href}
                   >
                     <div className="flex-shrink-0 size-8 text-gray-800 mt-0.5 me-6">
                       <item.icon
@@ -131,25 +133,29 @@ export default function Hero() {
                         </p>
                       </div>
 
-                      <p className="mt-8 inline-flex items-center tracking-wider gap-x-1 text-sm font-semibold text-gray-800">
-                        {item.more}
-                        <svg
-                          className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="m9 18 6-6-6-6" />
-                        </svg>
-                      </p>
+                      <a href={item.href}>
+                        <p className="mt-8 inline-flex items-center tracking-wider gap-x-1 text-sm font-semibold text-gray-800">
+                          {item.more}
+                          <svg
+                            className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="m9 18 6-6-6-6" />
+                          </svg>
+                        </p>
+                      </a>
+
+
                     </div>
-                  </a>
+                  </div>
                 ))}
 
                 {/* <!-- End Card --> */}
@@ -229,18 +235,15 @@ export default function Hero() {
                           target="_blank"
                         >
                           <svg
-                            className="flex-shrink-0 size-6 pb-1"
-                            width="50"
-                            height="52"
-                            viewBox="0 0 50 52"
-                            fill="none"
+                            className="flex-shrink-0 size-8"
+                            width="24"
+                            height="24"
+                            fill="#6FDA44"
                             xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M28.5665 20.7714L46.4356 0H42.2012L26.6855 18.0355L14.2931 0H0L18.7397 27.2728L0 49.0548H4.23464L20.6196 30.0087L33.7069 49.0548H48L28.5655 20.7714H28.5665ZM22.7666 27.5131L5.76044 3.18778H12.2646L42.2032 46.012H35.699L22.7666 27.5142V27.5131Z"
-                              fill="currentColor"
-                            ></path>
+                            viewBox="0 0 641 512">
+                            <path d="M494.7 295.6c-50.3 0-83.5-38.9-92.8-53.9c11.9-95.3 46.8-125.4 92.8-125.4c45.5 0 80.9 36.4 80.9 89.7s-35.4 89.7-80.9 89.7zm0-237.8c-81.9 0-127.8 53.4-141 108.4c-14.9-28-25.9-65.5-34.5-100.3H206v141c0 51.1-23.3 89-68.8 89s-71.6-37.8-71.6-89l.5-141H.8v141c0 41.1 13.3 78.4 37.6 105.1c25 27.5 59.2 41.8 98.8 41.8c78.8 0 133.8-60.4 133.8-146.9V112.1c8.2 31.2 27.8 91.1 65.3 143.6l-35 199.4h66.4l23.1-141.3c7.6 6.3 15.7 12 24.2 17c22.2 14 47.7 21.9 73.9 22.8c0 0 4 .2 6.1 .2c81.2 0 145.9-62.9 145.9-147.8s-64.8-148.1-146-148.1z" />
                           </svg>
+
                         </a>
                       </div>
                     </div>
@@ -255,7 +258,7 @@ export default function Hero() {
           {/* About Section */}
         </div>
       </div>
-     
+
     </>
   );
 }

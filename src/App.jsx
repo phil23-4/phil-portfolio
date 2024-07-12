@@ -1,9 +1,10 @@
 import './App.css'
 import Header from './components/nav/header'
 import Hero from './components/hero'
-import About from './components/about'
-import Services from './components/services'
+import Projects from './components/projects'
+import Contact from './components/contact'
 import Footer from './components/nav/footer'
+import About from './components/about'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     <Header />
     <Hero />  
     <About />
-    <Services />
+    <Projects />
+    <Contact />
     <Footer />
     </>
   )
