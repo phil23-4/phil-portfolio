@@ -82,10 +82,10 @@ export default function Hero() {
               <div className="mt-8 flex gap-4">
                 <a
                   className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
-                  href="/preview"
+                  href="#contact"
                 >
                   <span>
-                    Hire Me{" "}
+                    Contact Me{" "}
                     <span
                       aria-hidden="true"
                       className="text-slate-400 sm:inline"
@@ -97,6 +97,7 @@ export default function Hero() {
                 <a
                   className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 "
                   href="/documentation"
+                  target="_blank"
                 >
                   <span>
                     Download CV{" "}
