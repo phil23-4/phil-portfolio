@@ -38,7 +38,7 @@ const homeData = [
     id: 2,
     title: " My Work",
     description:
-      "My work philosophy centers on crafting simple yet innovative solutions that are tailored to the end user. My goal is to come up with innovative solutions that meet the needs of my clients and deliver value to their business.",
+      "My work philosophy centers on crafting simple yet innovative solutions that are tailored to the end user's needs and experience.",
     more: "Browse Portfolio",
     href: "#projects",
     icon: BriefcaseIcon,
