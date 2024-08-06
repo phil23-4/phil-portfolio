@@ -63,8 +63,8 @@ const experience = [
   },
   {
     date: "Jan - Dec 2022",
-    role: "Web Developer",
-    company: "Freelance",
+    role: "Network Administrator",
+    company: "Talk City (PVT) Ltd",
     description:
       "Created physical and prototype designs and functions for websites. Registered official online projects with search engines for optimized website traffic",
     tools: [
@@ -236,7 +236,7 @@ export default function About() {
                     className="group flex group-hover:scale-x-105 mt-8 items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500"
                     href="#"
                   >
-                    Visit Full Resume
+                    View Full Resume
                     <svg
                       className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1"
                       width="24"
@@ -303,7 +303,7 @@ export default function About() {
                     className="group flex group-hover:scale-x-105 mt-8 items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500"
                     href="#"
                   >
-                    Visit Full Resume
+                    View Full Resume
                     <svg
                       className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1"
                       width="24"
