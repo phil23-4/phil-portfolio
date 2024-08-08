@@ -2,11 +2,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJava,
+  faCss3Alt,
   faNodeJs,
   faPython,
+  faFigma,
+  faKaggle,
+  faReact,
   faHtml5,
   faJs,
   faCss3,
+  faMicrosoft,
 } from "@fortawesome/free-brands-svg-icons";
 import work from "../assets/images/work.svg";
 import person from "../assets/images/person.svg";
@@ -14,74 +19,74 @@ import standing from "../assets/images/standing.svg";
 
 const experience = [
   {
-    date: "Present",
-    role: "Web Developer",
-    company: "Ridge Brands",
+    date: "July - Present",
+    role: "Software Developer",
+    company: "CETNOPH Enterprises",
     description:
-      "Created physical and prototype designs and functions for websites. Registered official online projects with search engines for optimized website traffic",
+      "Prototype, build, style, and ship high·quality websites, design systems, mobile apps, and cross platform digital experiences for a diverse array of clients using technologies such as JavaScript, React, CSS, Figma, and more",
     tools: [
       {
         id: 0,
-        name: "Java",
-        icon: faJava,
+        name: "React",
+        icon: faReact,
       },
       {
         id: 1,
-        name: "Node.js",
-        icon: faNodeJs,
+        name: "Figma",
+        icon: faFigma,
       },
       {
         id: 2,
-        name: "Python",
-        icon: faPython,
+        name: "Javascript",
+        icon: faJs,
+      },
+      {
+        id: 3,
+        name: "CSS",
+        icon: faCss3Alt,
       },
     ],
   },
   {
-    date: "Jan - Dec 2023",
+    date: "Jan - June 2024",
     role: "Web Developer",
-    company: "Germinate",
+    company: "Freelancer",
     description:
-      "Created physical and prototype designs and functions for websites. Registered official online projects with search engines for optimized website traffic",
+      "Developed, maintained, and shipped production code for client websites using HTML, CSS, and React. Performed quality assurance tests on various sites to ensure cross browser compatibility and mobile responsiveness.",
     tools: [
       {
         id: 0,
-        name: "Java",
-        icon: faJava,
+        name: "HTML",
+        icon: faHtml5,
       },
       {
         id: 1,
-        name: "Node.js",
-        icon: faNodeJs,
+        name: "CSS",
+        icon: faCss3Alt,
       },
       {
         id: 2,
-        name: "Python",
-        icon: faPython,
+        name: "React",
+        icon: faReact,
       },
     ],
   },
   {
-    date: "Jan - Dec 2022",
-    role: "Network Administrator",
+    date: "2021 - 2023",
+    role: "Data Analyst",
     company: "Talk City (PVT) Ltd",
     description:
-      "Created physical and prototype designs and functions for websites. Registered official online projects with search engines for optimized website traffic",
+      "Conducted comprehensive data analysis on sales data to uncover trends, patterns, and insights. Built predictive models using Python and applied regression analysis to forecast sales demand, resulting in a 15% improvement in inventory management.",
     tools: [
       {
         id: 0,
-        name: "Java",
-        icon: faJava,
+        name: "Python",
+        icon: faPython,
       },
       {
         id: 1,
-        name: "Node.js",
-        icon: faNodeJs,
-      },
-      {
-        id: 2,
-        name: "Python",
-        icon: faPython,
+        name: "Excel",
+        icon: faMicrosoft,
       },
     ],
   },
@@ -189,9 +194,9 @@ export default function About() {
                 <div className="mt-8">
                   {/* <!-- Item --> */}
                   {experience.map((exp) => (
-                    <div key={exp.company} className="flex gap-x-3">
+                    <div key={exp.company} className="flex gap-x-4">
                       {/* <!-- Left Content --> */}
-                      <div className="w-56 text-end">
+                      <div className="w-1/4 text-end">
                         <span className="text-xs font-semibold text-gray-700">
                           {exp.date}
                         </span>
@@ -207,11 +212,11 @@ export default function About() {
                       {/* <!-- End Icon --> */}
 
                       {/* <!-- Right Content --> */}
-                      <div className="grow pt-0.5 pb-8">
+                      <div className="grow pt-0.5 pb-8 w-3/4">
                         <h3 className="flex gap-x-1.5 font-bold text-gray-800">
                           {exp.role} @ {exp.company}
                         </h3>
-                        <p className="mt-1 text-gray-600 leading-6">
+                        <p className="mt-1 text-gray-600 leading-6 text-balance">
                           {exp.description}
                         </p>
 
@@ -234,7 +239,8 @@ export default function About() {
                   ))}
                   <a
                     className="group flex group-hover:scale-x-105 mt-8 items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500"
-                    href="#"
+                    href="/resume.pdf"
+                    target="_blank"
                   >
                     View Full Resume
                     <svg
@@ -301,7 +307,8 @@ export default function About() {
                   ))}
                   <a
                     className="group flex group-hover:scale-x-105 mt-8 items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500"
-                    href="#"
+                    href="/resume.pdf"
+                    target="_blank"
                   >
                     View Full Resume
                     <svg

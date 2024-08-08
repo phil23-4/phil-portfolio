@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     name: "Vision 2030 Movement",
     description: "Lorem",
-    link: "https://vision2030movement.com",
+    link: "https://vision2030-two.vercel.app/",
     image: "https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600",
     tools: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
   },
@@ -46,7 +46,7 @@ export default function Projects() {
               style={{
                 background: `url(${project.image})`,
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
+                backgroundSize: "contain",
                 backgroundPosition: "center",
               }}
             >
@@ -64,7 +64,7 @@ export default function Projects() {
                       {project.description}
                     </p>
                   </div>
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-6 hidden md:block flex-wrap gap-2">
                     {project.tools.map((tool) => (
                       <span
                         key={tool}
