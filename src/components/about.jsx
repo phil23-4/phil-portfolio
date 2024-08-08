@@ -6,7 +6,6 @@ import {
   faNodeJs,
   faPython,
   faFigma,
-  faKaggle,
   faReact,
   faHtml5,
   faJs,

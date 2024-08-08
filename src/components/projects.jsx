@@ -1,4 +1,5 @@
 import amasunday from "../assets/images/amasunday.png";
+import vision2030 from "../assets/images/vision2030.png";
 
 const projects = [
   {
@@ -14,16 +15,8 @@ const projects = [
     name: "Vision 2030 Movement",
     description: "Lorem",
     link: "https://vision2030-two.vercel.app/",
-    image: "https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600",
-    tools: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
-  },
-  {
-    id: 3,
-    name: "Eco-Friendly Restaurant",
-    description: "Lorem",
-    link: "https://eco-friendly-restaurant.vercel.app/",
-    image: "https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600",
-    tools: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+    image: vision2030,
+    tools: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "Vite"],
   },
 ];
 export default function Projects() {
