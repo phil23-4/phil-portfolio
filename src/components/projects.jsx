@@ -1,5 +1,5 @@
 import amasunday from "../assets/images/amasunday.png";
-import vision2030 from "../assets/images/vision2030.png";
+import vision2030 from "../assets/images/vision2030.PNG";
 
 const projects = [
   {
