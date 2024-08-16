@@ -14,7 +14,7 @@ export default function Header() {
     <header
       className={classNames(
         scrollPosition > 0 ? "bg-stone-50 shadow-sm" : "bg-stone-50 opacity-95",
-        "sticky inset-x-0 top-0 z-40"
+        "inset-x-0 top-0 z-40"
       )}
     >
       <nav
@@ -137,30 +137,6 @@ export default function Header() {
                 />
               </svg>
             </a>
-            {/* <a
-              className="inline-flex flex-shrink-0 justify-center items-center size-9 font-medium rounded-full text-gray-800 hover:bg-gray-200"
-              href="https://www.linkedin.com/in/phillip-francis-chapita"
-              target="_blank"
-            >
-              <svg
-                className="flex-shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="100"
-                height="100"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="#0288D1"
-                  d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
-                ></path>
-                <path
-                  fill="#FFF"
-                  d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
-                ></path>
-              </svg>{" "}
-            </a> */}
           </div>
           <a
             className="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700  ml-8"
@@ -179,15 +155,13 @@ export default function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Phillip Chapita</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <p className="h-5 w-auto text-sm font-amsterdam">
+                Phillip Chapita
+              </p>
             </a>
             <button
               type="button"

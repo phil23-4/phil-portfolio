@@ -51,7 +51,7 @@ export default function Hero() {
       <div className="overflow-hidden bg-stone-50 py-24 lg:py-28 sm:py-12 md:bg-hero-bg bg-no-repeat bg-center">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 ">
           <div className="mx-auto grid  grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-full lg:grid-cols-2">
-            <div className="relative z-20 mx-auto max-w-[40rem] pb-16 pt-16 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:pt-20">
+            <div className="mx-auto max-w-[40rem] pb-16 pt-16 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:pt-20">
               <p className="mt-4 text-5xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
                 Phillip F. Chapita
               </p>
