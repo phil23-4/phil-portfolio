@@ -168,6 +168,7 @@ export default function About() {
                 <img
                   src={person}
                   alt=""
+                  loading="lazy"
                   className="h-auto w-full scale-x-[-1]"
                 />
               </div>
@@ -179,6 +180,7 @@ export default function About() {
                 <img
                   src={standing}
                   alt=""
+                  loading="lazy"
                   className="h-auto w-full object-contain"
                 />
               </div>
@@ -337,6 +339,7 @@ export default function About() {
                 <img
                   src={work}
                   alt=""
+                  loading="lazy"
                   className="h-auto w-full object-contain scale-x-[-1]"
                 />
               </div>
