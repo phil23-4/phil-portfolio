@@ -1,5 +1,5 @@
-import amasunday from "../assets/images/amasunday.png";
-import vision2030 from "../assets/images/vision.png";
+import amasunday from "../assets/images/amasunday.webp";
+import vision2030 from "../assets/images/vision.webp";
 
 const projects = [
   {
