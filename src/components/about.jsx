@@ -215,7 +215,7 @@ export default function About() {
                         <h3 className="flex gap-x-1.5 font-bold text-gray-800">
                           {exp.role} @ {exp.company}
                         </h3>
-                        <p className="mt-1 text-gray-600 leading-6 text-balance">
+                        <p className="mt-1 text-gray-600 leading-6 text-pretty">
                           {exp.description}
                         </p>
 
