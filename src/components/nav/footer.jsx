@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mt-auto w-full bg-stone-50 max-w-[85rem] py-8 px-4 sm:px-6 lg:px-8 mx-auto">
+    <footer className="mt-auto w-full bg-stone-50 max-w-7xl py-8 px-4 sm:px-6 lg:px-8 mx-auto">
       {/* <!-- Grid --> */}
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
         <div>

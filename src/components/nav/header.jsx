@@ -13,8 +13,10 @@ export default function Header() {
   return (
     <header
       className={classNames(
-        scrollPosition > 0 ? "bg-stone-50 shadow-sm" : "bg-stone-50 opacity-95",
-        "inset-x-0 top-0 z-40"
+        scrollPosition > 0
+          ? "sticky inset-x-0 top-0 z-50 bg-stone-50 shadow-sm"
+          : "bg-stone-50 opacity-95",
+        "w-full flex-none text-sm font-semibold leading-6 text-slate-900"
       )}
     >
       <nav
@@ -22,7 +24,7 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a className="flex-none text-slate-900" href="/">
+          <a className="flex-none font-medium" href="/">
             <span className="sr-only">Phillip Chapita Portfolio</span>
             <p
               className={classNames(
