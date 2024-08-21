@@ -215,6 +215,38 @@ export default function Header() {
           </div>
         </DialogPanel>
       </Dialog>
+      <div
+        className={classNames(
+          scrollPosition > 500 ? "fixed bottom-0 right-0 p-4" : "hidden"
+        )}
+      >
+        <button
+          className="bg-slate-900 text-white hover:bg-slate-700 rounded-full w-12 h-12 flex items-center justify-center hover:shadow-md"
+          onClick={
+            (window.goToTop = function () {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            })
+          }
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </header>
   );
 }
