@@ -14,7 +14,7 @@ export default function Header() {
     <header
       className={classNames(
         scrollPosition > 0
-          ? "sticky inset-x-0 top-0 bg-stone-50 shadow-sm"
+          ? "sticky inset-x-0 top-0 z-40 bg-stone-50 shadow-sm"
           : "flex-none bg-stone-50 opacity-95",
         "w-full text-sm font-semibold leading-6 text-slate-900"
       )}
@@ -156,8 +156,8 @@ export default function Header() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm">
+        <div className="fixed inset-0 z-50" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Phillip Chapita</span>
