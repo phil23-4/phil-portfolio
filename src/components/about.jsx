@@ -240,7 +240,7 @@ export default function About() {
                   ))}
                   <a
                     className="group flex group-hover:scale-x-105 mt-8 items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500"
-                    href="/resume.pdf"
+                    href="/phillip_chapita_cv.pdf"
                     target="_blank"
                   >
                     View Full Resume
@@ -308,7 +308,7 @@ export default function About() {
                   ))}
                   <a
                     className="group flex group-hover:scale-x-105 mt-8 items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500"
-                    href="/resume.pdf"
+                    href="/phillip_chapita_cv.pdf"
                     target="_blank"
                   >
                     View Full Resume

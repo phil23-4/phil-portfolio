@@ -96,7 +96,7 @@ export default function Hero() {
                 </a>
                 <a
                   className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 "
-                  href="/resume.pdf"
+                  href="/phillip_chapita_cv.pdf"
                   target="_blank"
                 >
                   <span>

@@ -100,9 +100,14 @@ export default function Footer() {
               </svg>
             </a>
           </div>
+          <p className="text-center block">
+            Loosely designed in Figma and coded in Visual Studio Code by yours
+            truly. Built with Vite JS, React and Tailwind CSS, deployed with
+            Vercel.
+          </p>
           <span className="text-center block">
-            © <a href="https://pagedone.io/">Phillip Francis Chapita</a>{" "}
-            {currentYear}, All rights reserved.
+            © <a href="/">Phillip Francis Chapita</a> {currentYear}, All rights
+            reserved.
           </span>
         </div>
       </div>
