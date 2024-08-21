@@ -14,9 +14,9 @@ export default function Header() {
     <header
       className={classNames(
         scrollPosition > 0
-          ? "sticky inset-x-0 top-0 z-50 bg-stone-50 shadow-sm"
-          : "bg-stone-50 opacity-95",
-        "w-full flex-none text-sm font-semibold leading-6 text-slate-900"
+          ? "sticky inset-x-0 top-0 bg-stone-50 shadow-sm"
+          : "flex-none bg-stone-50 opacity-95",
+        "w-full text-sm font-semibold leading-6 text-slate-900"
       )}
     >
       <nav

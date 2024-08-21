@@ -198,7 +198,7 @@ export default function About() {
                     <div key={exp.company} className="flex gap-x-4">
                       {/* <!-- Left Content --> */}
                       <div className="w-1/4 text-end">
-                        <span className="text-xs font-semibold text-gray-700">
+                        <span className="text-xs font-semibold text-gray-800">
                           {exp.date}
                         </span>
                       </div>
@@ -224,11 +224,11 @@ export default function About() {
                         {exp.tools.map((tool) => (
                           <div
                             key={tool.id}
-                            className="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-sm  border border-transparent text-gray-500 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                            className="mt-1 -ms-1 p-1 inline-flex items-center gap-x-2 text-sm  border border-transparent text-slate-900 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                           >
                             <FontAwesomeIcon
                               icon={tool.icon}
-                              className="flex-shrink-0 size-5  stroke-current text-slate-600"
+                              className="flex-shrink-0 size-5  stroke-current text-slate-800"
                               fill="none"
                             />
                             <span className="ml-0">{tool.name}</span>

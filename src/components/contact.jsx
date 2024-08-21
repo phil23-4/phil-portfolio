@@ -60,13 +60,13 @@ export default function Contact() {
                     <div className="grow">
                       <h3 className="font-bold">Contact me by email</h3>
                       <p className="mt-1 ">
-                        If you wish to write me an email instead please use
+                        If you have an inquiry feel free to email me
                       </p>
                       <a
                         className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800"
                         href="mailto:example@site.com"
                       >
-                        example@site.com
+                        phillip_chapita@outlook.com
                       </a>
                     </div>
                   </div>
