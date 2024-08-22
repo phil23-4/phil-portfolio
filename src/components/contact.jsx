@@ -64,9 +64,9 @@ export default function Contact() {
                       </p>
                       <a
                         className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800"
-                        href="mailto:example@site.com"
+                        href="mailto:info@phillipchapita.com"
                       >
-                        phillip_chapita@outlook.com
+                        info@phillipchapita.com
                       </a>
                     </div>
                   </div>
