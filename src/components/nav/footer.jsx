@@ -11,7 +11,7 @@ export default function Footer() {
           >
             Phillip Chapita
           </a>
-          <ul className="font-medium flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
+          <ul className="font-medium flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 border-b border-gray-200">
             <li>
               <a href="#about" className="text-gray-800 hover:text-gray-900">
                 About
@@ -31,9 +31,9 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <div className="flex space-x-10 justify-center items-center mb-14">
+          <div className="flex gap-9 justify-center items-center my-12">
             <a
-              className="block text-gray-900 transition-all duration-500 "
+              className="block w-9 h-9 text-gray-900 transition-all duration-500 "
               href="https://www.figma.com/@phillipchapita"
               target="_blank"
             >
@@ -68,7 +68,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              className="block text-gray-900 transition-all duration-500text-gray-800 "
+              className="block w-9 h-9 text-gray-900 transition-all duration-500text-gray-800 "
               href="https://github.com/phil23-4"
               target="_blank"
             >
@@ -84,7 +84,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              className="block text-gray-900 transition-all duration-500 "
+              className="block w-9 h-9 text-gray-900 transition-all duration-500 "
               href="https://www.upwork.com/freelancers/~019a6fc81ef4592218?mp_source=share"
               target="_blank"
             >
@@ -100,10 +100,10 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <p className="text-center block"></p>
-          <span className="text-center block">
-            Designed and Built by &copy; <a href="/">Phillip Francis Chapita</a>{" "}
-            {currentYear}, All rights reserved.
+          <span className="text-center block font-normal text-sm leading-6 text-gray-900">
+            &copy; {currentYear}{" "}
+            <a href="https://www.phillipchapita.com">Phillip Francis Chapita</a>
+            . All rights reserved.
           </span>
         </div>
       </div>
