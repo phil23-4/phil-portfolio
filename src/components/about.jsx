@@ -18,7 +18,7 @@ import standing from "../assets/images/standing.svg";
 
 const experience = [
   {
-    date: "July - Present",
+    date: "July - December 2024",
     role: "Software Developer",
     company: "CETNOPH Enterprises",
     description:
