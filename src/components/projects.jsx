@@ -5,7 +5,8 @@ const projects = [
   {
     id: 1,
     name: "AMA Sunday Farmers Market",
-    description: "Lorem",
+    description:
+      "The AMA SUNDAY Market is in the agribusiness industry and will be involved in the sale of a wide range of farm produce from farmers in Harare and around the country.",
     link: "https://ama-sundays-market.vercel.app/",
     image: amasunday,
     tools: ["HTML", "React", "Tailwind CSS", "Next.js"],
@@ -13,7 +14,8 @@ const projects = [
   {
     id: 2,
     name: "Vision 2030 Movement",
-    description: "Lorem",
+    description:
+      "Vision 2030 Movement is a society movement that was established by a group of youth motivated by the idea of becoming custodians of governance, accountability, youth empowerment and development within their country.",
     link: "https://vision2030-two.vercel.app/",
     image: vision2030,
     tools: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "Vite"],
