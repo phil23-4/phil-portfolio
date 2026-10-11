@@ -11,15 +11,6 @@ const projects = [
     image: amasunday,
     tools: ["HTML", "React", "Tailwind CSS", "Next.js"],
   },
-  {
-    id: 2,
-    name: "Vision 2030 Movement",
-    description:
-      "Vision 2030 Movement is a society movement that was established by a group of youth motivated by the idea of becoming custodians of governance, accountability, youth empowerment and development within their country.",
-    link: "https://vision2030-two.vercel.app/",
-    image: vision2030,
-    tools: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "Vite"],
-  },
 ];
 export default function Projects() {
   return (
