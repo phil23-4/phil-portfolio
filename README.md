@@ -1,6 +1,6 @@
 # Phillip's Portfolio Website
 
-![Portfolio Preview](https://www.phillipchapita.com/preview.PNG) <!-- Replace with an actual screenshot of your portfolio -->
+![Portfolio Preview](https://www.phillipchapita.com/preview.PNG)
 
 ## Overview
 
